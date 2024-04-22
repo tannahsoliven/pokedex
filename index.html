@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>POKEDEX using PokéAPI</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+    <div>
+        <h1>POKEDEX using PokéAPI</h1>
+        <div class="sort-and-search-container">
+          <div class="pokemon-sort-container">
+            <select id="filterDropdown" class="filter">
+              <option value="id">ID No.</option>
+              <option value="name">Name</option>
+            </select>
+          </div>
+          <div class="pokemon-search-container">
+            <input type="search" name="search" class="search-input" placeholder="Enter pokemon name or ID no. to search">
+            <button type="Search" class="search-button">Search</button>
+          </div>
+        </div>
+        <h3> Hover over the card to reveal more information about the pokemon!</h3>
+        <div id="pokemon-container" class="pokemon__container">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

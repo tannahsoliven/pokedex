@@ -1,0 +1,130 @@
+h1 {
+    text-align: center;
+    color: #fff3a7;
+    letter-spacing: 1px;
+    text-shadow: rgba(30, 0, 255, 0.5) 1px 1px 5px;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+body {
+    background: #ffdd01;
+    display: flex;
+}
+
+.pokemon-sort-container {
+    display: inline;
+    max-width: 1000px;
+    margin: 0 0 0 300px;
+}
+
+.filter {
+    padding: 5px 10px;
+    display: inline;
+    border-radius: 5px; 
+    margin-right: 5px; 
+}
+
+.pokemon-search-container {
+    background: #ffdd01;
+    display: inline;
+    max-width: 1000px;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin-right: 5px; 
+    max-width: 500px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+} 
+
+.pokemon__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 2000px;
+    
+} 
+
+.pokemon {
+    background-color: #ffeaac;
+    box-shadow: 0 3px 15px rgba(43, 43, 40, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 40px;
+    
+}
+
+.pokemon .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
+
+.pokemon .img-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.pokemon .img-container img {
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.pokemon .info {
+    margin-top: 20px;
+    font-variant: small-caps;
+}
+
+.pokemon:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.pokemon .card {
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+}
+
+.input-wrapper {
+    background: #ff8d0c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.25rem 0.25rem 0rem #ecba80;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+input {
+    margin: 0 0.5rem 0 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ff8d0c;
+    color: white;
+    font-size: 1rem;
+}
